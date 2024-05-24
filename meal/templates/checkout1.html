@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section id="asianCartSection-row">
+        <div id="asianCartSection">
+            <div class="asiaCart">
+                    <div class="asiaCart__sec1">
+                        <div class="asiaCart__sec1__title">
+                            <h5><b>Shopping Cart</b></h5>
+                        </div>
+
+                        {% for item in items %}
+                            <div class="asiaCart__sec1__detail">
+                                <img class="" src="{{item.product.imageURL}}">
+                                <div class="">
+                                    <div class="">{{item.product.name}}</div>
+                                </div>
+                                <div>&yen;{{item.product.price|floatformat:2}}</div>
+                                <div>
+                                    <a href="{% url 'meal:decrease_order_qty' item.product.id %}">-</a>
+                                    <a href="#">x{{item.quantity}}</a>
+                                    <a href="{% url 'meal:increase_order_qty' item.product.id %}">+</a>
+                                </div>
+                                <div>&yen;{{item.get_total|floatformat:2}}</div>
+                            </div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="asiaCart__sec2">
+                        <div class="asiaCart__sec2__title">
+                            <h5><b>Summary</b></h5>
+                        </div>
+
+                        <div>
+                            <div class="">Items</div>
+                            <div class="">{{order.get_cart_items}}</div>
+                        </div>
+                        <div>
+                            <div>Total Price</div>
+                            <div>&yen;{{order.get_cart_total|floatformat:2}}</div>
+                        </div>
+                        
+                    </div>
+            </div>
+        
+            <div class="asiaCheckOut">
+                <div class="asiaCheckOut__1">
+                    <a href="{% url 'home:home' %}">&leftarrow; Add More..</a>
+                </div>
+                <div class="asiaCheckOut__2">
+                    <a class="checkOut" href="{% url 'meal:submit_order' %}"><button>Check Out</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

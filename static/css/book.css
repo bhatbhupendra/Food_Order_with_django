@@ -1,0 +1,108 @@
+#reservation {
+  margin: 20px 100px;
+  margin-top: 50px;
+  color: #4d312c;
+}
+
+@media (max-width: 900px) {
+  #reservation {
+    margin: 10px 10px;
+  }
+}
+
+#reservation h2 {
+  display: inline-block;
+  font-size: 30px;
+  border-bottom: 2px solid rgba(106, 106, 106, 0.38);
+  margin-bottom: 20px;
+}
+
+#reservation h2:hover {
+  opacity: 1.2;
+}
+
+#reservation #info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#reservation #info #about_form {
+  width: 40%;
+  font-family: "Poppins", sans-serif;
+}
+
+#reservation #info #about_form p {
+  font-size: 15px;
+  margin: 10px 0 20px;
+}
+
+#reservation #info #about_form input {
+  width: 400px;
+  height: 50px;
+  margin: 5px auto;
+  padding-left: 15px;
+  border: none;
+  /* <-- This thing here */
+  border: solid 1px #ccc;
+  border-radius: 15px;
+}
+
+#reservation #info #about_form button {
+  background: #fe5f41;
+  color: white;
+  width: 200px;
+  height: 45px;
+  font-size: large;
+  border-radius: 15px;
+}
+
+#reservation #info #about_form button a {
+  -webkit-transition: all .8s;
+  transition: all .8s;
+}
+
+#reservation #info #about_form button a:hover {
+  color: white;
+  font-size: 20px;
+}
+
+#reservation #info figure {
+  background-image: url("/static/photos/img-1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 480px;
+  width: 50%;
+  border-radius: 5px;
+  -webkit-box-shadow: -4px 4px 14px 3px rgba(80, 80, 80, 0.44);
+          box-shadow: -4px 4px 14px 3px rgba(80, 80, 80, 0.44);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+#reservation #info figure:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+@media (max-width: 900px) {
+  #reservation #info {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  #reservation #info #about_form {
+    width: 85%;
+  }
+  #reservation #info figure {
+    height: 420px;
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=book.css.map */

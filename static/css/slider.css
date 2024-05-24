@@ -1,0 +1,36 @@
+#slider {
+  padding: 110px 25px 0px 25px;
+}
+
+#slider .carousel, #slider .carousel-item, #slider .active {
+  height: 500px;
+}
+
+#slider .carousel-caption {
+  background-color: rgba(85, 26, 3, 0.4);
+  width: 25%;
+  color: white;
+  height: 100px;
+  padding: 0px;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+  #slider .carousel-caption {
+    width: 35%;
+    height: 130px;
+  }
+}
+
+#slider .carousel-caption h3, #slider .carousel-caption p {
+  margin: 0px;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  #slider .carousel, #slider .carousel-item, #slider .active {
+    height: auto;
+  }
+}
+/*# sourceMappingURL=slider.css.map */

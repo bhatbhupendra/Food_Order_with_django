@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="{% static '/css/option_update.css' %}">
+  </head>
+  <body>
+    <div class="container">
+      <!-- Table Starts -->
+      <table>
+        <tr>
+          <th colspan="4" style="background-color: #ff7256;color: white;"><h2>Fill & Processed</h2></th>
+        </tr>
+        <tr class="image-food">
+          <td colspan="2"><img src="{{meal.product.image.url}}" alt="Image" /></td>
+          <td colspan="2">
+            <div class="food">
+              <h1>{{meal.product.name}}</h1>
+              <h5>{{meal.product.description}}</h5>
+              <h5>#{{meal.product.category}}</h5>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Price:- ${{meal.product.price}}</td>
+          <td>Qty:- {{meal.quantity}}</td>
+          <td rowspan="2">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <span>Food Type</span>
+                {{form.foodChoice}}<br>
+                <span>Spicy</span>
+                {{form.spicy}}
+                <input style="background-color:#ff7256 ; margin-top: 5px;font-size: large;height: 30px; font-weight: bold;color: white;width: 100%; " type="submit" name="submit" value="Proceed">
+          </td>
+        </tr>
+        <tr>
+          <td><h5>Total</h5></td>
+          <td><h5>${{meal.get_total}}</h5></td>
+        </tr>
+      </table>
+      <!-- Table Ends -->
+    </div>
+  </body>
+</html>

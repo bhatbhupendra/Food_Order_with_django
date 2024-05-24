@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: rgba(248, 248, 255, 0.719);
+}
+
+table,
+tr,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th {
+  padding: 5px 20px;
+  font-size: 19px;
+  color: crimson;
+}
+
+td {
+  vertical-align: middle;
+  text-align: center;
+  padding: 1px 2px;
+  font-size: large;
+}
+
+td:first-child {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  height: 200px;
+  width: 300px;
+}
+
+.food {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 200px;
+  width: 250px;
+  color: crimson;
+}
+
+.drop-down {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.Drop-Color {
+  color: crimson;
+  font-weight: normal;
+}
+
+input {
+  width: 90%;
+  height: 25px;
+  border: 0.5px solid #000;
+}
+
+input:focus {
+  outline: none;
+}
+
+h5 {
+  font-size: 17px;
+}
+
+.btn {
+  background-color: crimson;
+  width: 100%;
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+  border: none;
+}
+
+.drop ul li {
+  display: none;
+}
+
+ul hr {
+  display: none;
+}
+
+ul:hover hr {
+  display: block;
+}
+
+.drop:hover hr {
+  display: block;
+}
+
+.drop:hover ul li,
+hr {
+  display: block;
+  background-color: black;
+  color: White;
+}
+
+li {
+  list-style: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=option_update.css.map */

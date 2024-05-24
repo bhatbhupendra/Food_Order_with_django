@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+</head>
+<body>
+    <h3>reservation</h3>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{resForm.media}}
+        {{resForm.as_p}}
+        <input type="submit" name="submit">
+    </form>
+
+    <div>
+        <h3>reservations</h3>
+        {% for reservation in reservations %}
+            {{reservation.name}}
+            {{reservation.totalNumber}}
+            {{reservation.resDate}}
+            {{reservation.resTime}}
+            <br>
+        {% endfor %}
+    </div>
+    
+</body>
+</html>

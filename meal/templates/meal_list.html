@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="foodSection" style="margin-top: 80px;">
+        <h2><spann id="orangeHilight">Dinner</span></h2>
+            <div class="foodSection__cart">
+            {% for meal in meals %}
+            <div class="foodSection__card__item">
+                <img src="{{meal.imageURL}}" alt="{{meal.name}}">
+                <h4>{{meal.name}}</h4>
+                <span>{{meal.description}}</span>
+                <h5><span id="orangeHilight">${{meal.price}}</span></h5>
+                <div class="foodSection__card__item__btnSec">
+                    <a href="{% url 'meal:create_order' meal.slug %}"><span>カートに追加</span></a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="foodSection" style="margin-top: 80px;">
+        <h2><spann id="orangeHilight">Deasert</span></h2>
+            <div class="foodSection__cart">
+            {% for meal in meals %}
+            <div class="foodSection__card__item">
+                <img src="{{meal.imageURL}}" alt="{{meal.name}}">
+                <h4>{{meal.name}}</h4>
+                <span>{{meal.description}}</span>
+                <h5><span id="orangeHilight">${{meal.price}}</span></h5>
+                <div class="foodSection__card__item__btnSec">
+                    <a href="{% url 'meal:create_order' meal.slug %}"><span>カートに追加</span></a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock content %}

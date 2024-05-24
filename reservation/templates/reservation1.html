@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .inlineH3{
+        display: inline-block;
+    }
+
+</style>
+<section id="reservation" style="margin-top:100px;">
+    <h2>Book <span id="orangeHilight">Table</span></h2>
+    <article id="info">
+        <figure></figure>
+        <form id="about_form" method="post">
+            <p>Making a resurvatin at our restaurant is easy and takes just a couple of minutes.</p>
+            {% csrf_token %}
+            {{resForm.media}}
+            <h5 class="inlineH3">Name:- &ThinSpace;</h5>{{resForm.name}} <br>
+            <h5 class="inlineH3">Email:- &ThinSpace;</h5>{{resForm.email}} <br>
+            <h5 class="inlineH3">Phone No:- &ThinSpace;</h5>{{resForm.phNo}} <br>
+            <h5 class="inlineH3">Total No:- &ThinSpace;</h5>{{resForm.totalNumber}} <br>
+            <h5 class="inlineH3">Date:- &ThinSpace;</h5>{{resForm.resDate}} <br>
+            <h5 class="inlineH3">Time:- &ThinSpace;</h5>{{resForm.resTime}} <br>
+            
+            <!-- <input type="text" name="totalGuest" id="totalGuest" placeholder=" &nbsp Number of Guest"><br>
+            <input type="text" name="date" id="date" placeholder="&nbsp Date">
+            <input type="text" name="time" id="time" placeholder="&nbsp Time"><br>
+            <input type="text" name="phone" id="phone" placeholder="&nbsp Phone Number"><br>
+            <input type="text" name="date" id="date" placeholder="&nbsp Date"><br>
+            <input type="text" name="message" id="message" placeholder="&nbsp Message"> -->
+            <div class="form_botton">
+              <button>
+                <a href="{% url 'reservation:reservation-list' %}"><span>Submit Request</span></a>
+              </button>
+            </div>
+            
+        </form>
+    </article>
+  </section>
+{% endblock content %}

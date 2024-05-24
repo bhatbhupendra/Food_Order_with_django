@@ -1,0 +1,168 @@
+#asianCartSection-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#asianCartSection-row #asianCartSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 90%;
+}
+
+#asianCartSection-row #asianCartSection .asiaCart {
+  margin-top: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#asianCartSection-row #asianCartSection .asiaCart .asiaCart__sec1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff4f2;
+  width: 60%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 3px;
+  margin: 3px;
+}
+
+#asianCartSection-row #asianCartSection .asiaCart .asiaCart__sec1 .asiaCart__sec1__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #df583e;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: white;
+}
+
+#asianCartSection-row #asianCartSection .asiaCart .asiaCart__sec1 .asiaCart__sec1__detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 10px;
+}
+
+#asianCartSection-row #asianCartSection .asiaCart .asiaCart__sec1 .asiaCart__sec1__detail img {
+  width: 90px;
+  height: 60px;
+  border-radius: 5px;
+}
+
+#asianCartSection-row #asianCartSection .asiaCart .asiaCart__sec2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff4f2;
+  width: 25%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 3px;
+  margin: 3px;
+}
+
+#asianCartSection-row #asianCartSection .asiaCart .asiaCart__sec2 .asiaCart__sec2__title {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #df583e;
+  color: white;
+}
+
+#asianCartSection-row #asianCartSection .asiaCheckOut {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+#asianCartSection-row #asianCartSection .asiaCheckOut .asiaCheckOut__1 {
+  width: 60%;
+  background-color: #f7f7f7;
+  border-bottom-left-radius: 20px;
+  padding-top: 10px;
+}
+
+#asianCartSection-row #asianCartSection .asiaCheckOut .asiaCheckOut__2 {
+  width: 25%;
+  background-color: #f7f7f7;
+  border-bottom-right-radius: 20px;
+}
+
+#asianCartSection-row #asianCartSection .asiaCheckOut .asiaCheckOut__2 a button {
+  border-radius: 8px;
+  width: 110px;
+  height: 40px;
+  margin: 3px;
+  background-color: #df583e;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  #asianCartSection-row #asianCartSection .asiaCart {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #asianCartSection-row #asianCartSection .asiaCart .asiaCart__sec1 {
+    width: 100%;
+  }
+  #asianCartSection-row #asianCartSection .asiaCart .asiaCart__sec2 {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=cart.css.map */

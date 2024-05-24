@@ -1,0 +1,120 @@
+.foodSection {
+  padding: 20px 100px 20px 100px;
+}
+
+.foodSection h2 {
+  color: #4d312c;
+}
+
+.foodSection .foodSection__cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+.foodSection .foodSection__cart .foodSection__card__item {
+  color: #4d312c;
+  padding: 25px 20px 25px 20px;
+  width: 25%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.foodSection .foodSection__cart .foodSection__card__item img {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.foodSection .foodSection__cart .foodSection__card__item .foodSection__card__item__btnSec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.foodSection .foodSection__cart .foodSection__card__item .foodSection__card__item__btnSec a:nth-of-type(1) {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #f34c2b;
+  color: white;
+  padding: 8px;
+  margin: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 80%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 13px;
+  -webkit-box-shadow: -4px 4px 14px 3px rgba(80, 80, 80, 0.2);
+          box-shadow: -4px 4px 14px 3px rgba(80, 80, 80, 0.2);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.foodSection .foodSection__cart .foodSection__card__item .foodSection__card__item__btnSec a:nth-of-type(1):hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  background-color: #f75a3a;
+}
+
+@media (max-width: 1100px) {
+  .foodSection {
+    padding: 20px 70px 20px 70px;
+  }
+  .foodSection .foodSection__cart .foodSection__card__item {
+    width: 30%;
+    padding: 15px 10px 15px 10px;
+  }
+}
+
+@media (max-width: 950px) {
+  .foodSection {
+    padding: 20px 40px 20px 40px;
+  }
+  .foodSection .foodSection__cart .foodSection__card__item {
+    width: 48%;
+  }
+}
+
+@media (max-width: 550px) {
+  .foodSection {
+    padding: 20px 40px 20px 40px;
+  }
+  .foodSection .foodSection__cart {
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+  }
+  .foodSection .foodSection__cart .foodSection__card__item {
+    width: 90%;
+    padding: 15px 0px 15px 0px;
+  }
+}
+
+#orangeHilight {
+  color: #f34c2b;
+}
+/*# sourceMappingURL=foodCard.css.map */
